@@ -67,7 +67,11 @@ class HelloWorld {
     
         int command = inp.nextInt();
         
-    
+        //Screen clear command
+        System.out.print("\033[H\033[2J");  
+        System.out.flush();
+
+        
         return command;
     
     }
@@ -76,8 +80,7 @@ class HelloWorld {
     public static void main(String[] args) {
          
          do{
-            // System.out.print("\033[H\033[2J");  
-            // System.out.flush();
+            
             do{
                 check = menu();
             }while((check > 3) || (check < 1));
