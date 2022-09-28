@@ -1,0 +1,47 @@
+public class Rectangle extends Shape{
+    double width;
+    double length;
+
+    Rectangle(){
+        width = 1;
+        length = 1;
+    }
+    Rectangle(double width,double lenght){
+        this.width = width;
+        this.lenght = lenght;
+    }
+
+    Rectangle(double width,double lenght,String color,boolean filled){
+        this.width = width;
+        this.lenght = lenght;
+        super(color,filled);
+    }
+
+    double getWidth(){
+        return width;
+    }
+    void setWidth(double width){
+        this.width = width;
+    }
+
+    double getLength(){
+        return lenght;
+    }
+
+    void setLength(double length){
+        this.lenght = lenght;
+    }
+
+    double area(){
+        return width*lenght;
+    }
+
+    double getPerimeter(){
+
+    }
+    String toString(){
+        return color+" "+filled+" "+width+" "+lenght;
+    }
+
+    
+}

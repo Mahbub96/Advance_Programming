@@ -1,0 +1,28 @@
+public class Circle extands Shape{
+    double radius;
+    Circle(double radius){
+        this.radius = radius;
+    }
+    Circle(double radius,String color,boolean filled){
+        this.radius = radius;
+        super(color,filled);
+    }
+
+    double getRadius(){return radius;}
+
+    void setRadius(double radius){
+        this.radius = radius;
+    }
+
+    double getArea(){
+        return Math.PI*(r*r);
+    }
+
+    double getPerimeter(){
+
+    }
+
+    String toString(){
+        return color+" "+filled+" "+radius;
+    }
+}

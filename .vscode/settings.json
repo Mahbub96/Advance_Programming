@@ -1,0 +1,6 @@
+{
+    "editor.formatOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "editor.defaultFormatter": "vscjava.vscode-java-debug",
+    "editor.formatOnType": false
+}

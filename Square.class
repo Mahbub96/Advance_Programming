@@ -1,0 +1,36 @@
+public class Square extends Rectangle{
+    double side;
+
+    Square(){
+        side = 1;
+    }
+    Square(double side){
+        this.side = side;
+    }
+
+    Square(double side,String color,boolean filled){
+        this.side = side;
+        super(color,filled);
+    }
+
+    double getSide(){
+        return side;
+    }
+
+    void setSide(double side){
+        this.side = side;
+    }
+
+    void setWidth(double side){
+        width = side;
+    }
+
+    void setLength(double side){
+        lenght = side;
+    }
+
+    String toString(){
+        return color+" "+filled+" "+width+" "+lenght+" "+side;
+    }
+
+} 
