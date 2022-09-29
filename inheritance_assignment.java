@@ -1,6 +1,13 @@
-public class Inheritance_assignment{
+package inheritance_assignment;
+
+
+class Inheritance_assignment{
     public static void main(String[] args){
-        Shape s1 = new Shape();
-        System.out.println(s1);
+	    System.out.println("fuckoff");
+            
+            Circle cr = new Circle();
+            System.out.println(cr);
+            Square sq = new Square();
+            System.out.println(sq);
     }
 }
