@@ -1,8 +1,7 @@
-package inheritance_assignment;
 
 public class Shape{
     private String color;
-     private boolean filled;
+    private boolean filled;
     
     Shape(){
         color = "red";
@@ -29,6 +28,6 @@ public class Shape{
         this.filled = filled;
     }
 
-    public String toString(){ return color+" "+filled;
+    public String toString(){ return "Color is : "+color+" and filled is :"+filled;
     }
 }

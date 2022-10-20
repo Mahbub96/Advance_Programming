@@ -1,5 +1,8 @@
 public class Circle extands Shape{
-    double radius;
+    private double radius;
+    Circle(){
+        this.radius = 1;
+    }
     Circle(double radius){
         this.radius = radius;
     }
@@ -15,14 +18,14 @@ public class Circle extands Shape{
     }
 
     double getArea(){
-        return Math.PI*(r*r);
+        return Math.PI*(radius*radius);
     }
 
     double getPerimeter(){
-
+        return 2 * Math.PI*radius;
     }
 
     String toString(){
-        return color+" "+filled+" "+radius;
+        return "Color : "getColor()+", is Filled : "+isFilled()+", Radius : "+radius;
     }
 }

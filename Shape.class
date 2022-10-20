@@ -1,6 +1,7 @@
+
 public class Shape{
-    String color;
-    boolean filled;
+    private String color;
+    private boolean filled;
     
     Shape(){
         color = "red";
@@ -27,7 +28,6 @@ public class Shape{
         this.filled = filled;
     }
 
-    public String toString(){//overriding the toString() method
-        return color+" "+filled;
+    public String toString(){ return "Color is : "+color+" and filled is :"+filled;
     }
 }
